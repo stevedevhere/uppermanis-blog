@@ -1,4 +1,8 @@
-## React Starter Kit — "[isomorphic](http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/)" web app boilerplate &nbsp; <a href="https://github.com/kriasoft/react-starter-kit/stargazers"><img src="https://img.shields.io/github/stars/kriasoft/react-starter-kit.svg?style=social&label=Star&maxAge=3600" height="20"></a> <a href="https://twitter.com/ReactStarter"><img src="https://img.shields.io/twitter/follow/ReactStarter.svg?style=social&label=Follow&maxAge=3600" height="20"></a>
+### blog uppermanis
+
+---
+
+<!-- ## React Starter Kit — "[isomorphic](http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/)" web app boilerplate &nbsp; <a href="https://github.com/kriasoft/react-starter-kit/stargazers"><img src="https://img.shields.io/github/stars/kriasoft/react-starter-kit.svg?style=social&label=Star&maxAge=3600" height="20"></a> <a href="https://twitter.com/ReactStarter"><img src="https://img.shields.io/twitter/follow/ReactStarter.svg?style=social&label=Follow&maxAge=3600" height="20"></a>
 
 [React Starter Kit](https://www.reactstarterkit.com) is an opinionated boilerplate for web
 development built on top of [Node.js](https://nodejs.org/),
@@ -231,4 +235,4 @@ Made with ♥ by Konstantin Tarkus ([@koistya](https://twitter.com/koistya)) and
 [rsk]: https://www.reactstarterkit.com
 [demo]: http://demo.reactstarterkit.com
 [node]: https://nodejs.org
-[chat]: https://gitter.im/kriasoft/react-starter-kit
+[chat]: https://gitter.im/kriasoft/react-starter-kit -->

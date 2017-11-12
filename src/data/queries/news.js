@@ -8,15 +8,13 @@
  */
 
 import { GraphQLList as List } from 'graphql';
-import fetch from 'node-fetch';
+// import fetch from 'node-fetch';
 import NewsItemType from '../types/NewsItemType';
 
 // React.js News Feed (RSS)
-const url =
-  'https://api.rss2json.com/v1/api.json' +
-  '?rss_url=https%3A%2F%2Freactjsnews.com%2Ffeed.xml';
+// const url = `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Freactjsnews.com%2Ffeed.xml`;
 
-let items = [];
+// let items = [];
 let lastFetchTask;
 let lastFetchTime = new Date(1970, 0, 1);
 
@@ -29,29 +27,31 @@ const news = {
 
     if (new Date() - lastFetchTime > 1000 * 60 * 10 /* 10 mins */) {
       lastFetchTime = new Date();
-      lastFetchTask = fetch(url)
-        .then(response => response.json())
-        .then(data => {
-          if (data.status === 'ok') {
-            items = data.items;
-          }
+      lastFetchTask = [
+        {
+          title: '! 111 Hi there',
+          link: '! 111 Yoba, lol',
+          content: '<h2> ! 111  Yo hello this is content!!!</h2>',
+        },
+        {
+          title: '! 222 Hi there',
+          link: '! 222 Yoba, lol',
+          content: '<h2> ! 222 Yo hello this is content!!!</h2>',
+        },
+        {
+          title: 'Hi there',
+          link: 'Yoba, lol',
+          content: '<h2>Yo hello this is content!!!</h2>',
+        },
+      ];
 
-          lastFetchTask = null;
-          return items;
-        })
-        .catch(err => {
-          lastFetchTask = null;
-          throw err;
-        });
-
-      if (items.length) {
-        return items;
-      }
-
+      // if (items.length) {
+      //   return items;
+      // }
       return lastFetchTask;
     }
 
-    return items;
+    return lastFetchTask;
   },
 };
 

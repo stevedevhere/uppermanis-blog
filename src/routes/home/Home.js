@@ -19,6 +19,7 @@ class Home extends React.Component {
         title: PropTypes.string.isRequired,
         link: PropTypes.string.isRequired,
         content: PropTypes.string,
+        contentHue: PropTypes.string,
       }),
     ).isRequired,
   };
@@ -27,12 +28,12 @@ class Home extends React.Component {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <h1>React.js News</h1>
           {this.props.news.map(item => (
             <article key={item.link} className={s.newsItem}>
               <h1 className={s.newsTitle}>
                 <a href={item.link}>{item.title}</a>
               </h1>
+              {item.contentHue}
               <div
                 className={s.newsDesc}
                 // eslint-disable-next-line react/no-danger
